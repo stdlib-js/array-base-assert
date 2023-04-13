@@ -65,6 +65,7 @@ The namespace exports the following:
 
 <div class="namespace-toc">
 
+-   <span class="signature">[`contains( x, value )`][@stdlib/array/base/assert/contains]</span><span class="delimiter">: </span><span class="description">test if an array contains a provided search value.</span>
 -   <span class="signature">[`isAccessorArray( value )`][@stdlib/array/base/assert/is-accessor-array]</span><span class="delimiter">: </span><span class="description">test if an array-like object supports the accessor (get/set) protocol.</span>
 
 </div>
@@ -172,6 +173,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-assert/main/LICENSE
 
 <!-- <toc-links> -->
+
+[@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains
 
 [@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array
 
