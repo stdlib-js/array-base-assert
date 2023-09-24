@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.1.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { contains, isAccessorArray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
+import { contains, isAccessorArray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.1.0-deno/mod.js';
 ```
 
 #### ns
@@ -87,7 +87,7 @@ The namespace exports the following:
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.1.0-deno/mod.js';
 
 console.log( objectKeys( ns ) );
 ```
