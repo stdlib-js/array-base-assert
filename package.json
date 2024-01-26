@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@stdlib/array-base-assert-contains": "^0.1.0",
-    "@stdlib/array-base-assert-has-same-values": "github:stdlib-js/array-base-assert-has-same-values#main",
+    "@stdlib/array-base-assert-has-same-values": "^0.1.0",
     "@stdlib/array-base-assert-is-accessor-array": "^0.1.0",
     "@stdlib/array-base-assert-is-complex128array": "^0.1.0",
     "@stdlib/array-base-assert-is-complex64array": "^0.1.0",
