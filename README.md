@@ -35,20 +35,32 @@ limitations under the License.
 
 > Base array assertion utilities.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-assert
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { contains, hasSameValues, isAccessorArray, isComplex128Array, isComplex64Array, isComplexFloatingPointDataType, isComplexTypedArray, isDataType, isFloatingPointDataType, isIntegerDataType, isMostlySafeDataTypeCast, isNumericDataType, isRealDataType, isRealFloatingPointDataType, isSafeDataTypeCast, isSameKindDataTypeCast, isSignedIntegerDataType, isUnsignedIntegerDataType } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@esm/index.mjs';
+var ns = require( '@stdlib/array-base-assert' );
 ```
 
 #### ns
@@ -69,8 +81,21 @@ The namespace exports the following:
 -   <span class="signature">[`contains( x, value )`][@stdlib/array/base/assert/contains]</span><span class="delimiter">: </span><span class="description">test if an array contains a provided search value.</span>
 -   <span class="signature">[`hasSameValues( x, y )`][@stdlib/array/base/assert/has-same-values]</span><span class="delimiter">: </span><span class="description">test if two arrays have the same values.</span>
 -   <span class="signature">[`isAccessorArray( value )`][@stdlib/array/base/assert/is-accessor-array]</span><span class="delimiter">: </span><span class="description">test if an array-like object supports the accessor (get/set) protocol.</span>
+-   <span class="signature">[`isComplexFloatingPointDataType( value )`][@stdlib/array/base/assert/is-complex-floating-point-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array complex-valued floating-point data type.</span>
+-   <span class="signature">[`isComplexTypedArray( value )`][@stdlib/array/base/assert/is-complex-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a complex typed array.</span>
 -   <span class="signature">[`isComplex128Array( value )`][@stdlib/array/base/assert/is-complex128array]</span><span class="delimiter">: </span><span class="description">test if a value is a `Complex128Array`.</span>
 -   <span class="signature">[`isComplex64Array( value )`][@stdlib/array/base/assert/is-complex64array]</span><span class="delimiter">: </span><span class="description">test if a value is a `Complex64Array`.</span>
+-   <span class="signature">[`isDataType( value )`][@stdlib/array/base/assert/is-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array data type.</span>
+-   <span class="signature">[`isFloatingPointDataType( value )`][@stdlib/array/base/assert/is-floating-point-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array floating-point data type.</span>
+-   <span class="signature">[`isIntegerDataType( value )`][@stdlib/array/base/assert/is-integer-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array integer data type.</span>
+-   <span class="signature">[`isMostlySafeDataTypeCast( from, to )`][@stdlib/array/base/assert/is-mostly-safe-data-type-cast]</span><span class="delimiter">: </span><span class="description">determine whether an array data type can be safely cast or, for floating-point data types, downcast to another array data type.</span>
+-   <span class="signature">[`isNumericDataType( value )`][@stdlib/array/base/assert/is-numeric-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array numeric data type.</span>
+-   <span class="signature">[`isRealDataType( value )`][@stdlib/array/base/assert/is-real-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array real-valued data type.</span>
+-   <span class="signature">[`isRealFloatingPointDataType( value )`][@stdlib/array/base/assert/is-real-floating-point-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array real-valued floating-point data type.</span>
+-   <span class="signature">[`isSafeDataTypeCast( from, to )`][@stdlib/array/base/assert/is-safe-data-type-cast]</span><span class="delimiter">: </span><span class="description">determine whether an array data type can be safely cast to another array data type.</span>
+-   <span class="signature">[`isSameKindDataTypeCast( from, to )`][@stdlib/array/base/assert/is-same-kind-data-type-cast]</span><span class="delimiter">: </span><span class="description">determine whether an array data type can be safely cast to, or is of the same "kind" as, another array data type.</span>
+-   <span class="signature">[`isSignedIntegerDataType( value )`][@stdlib/array/base/assert/is-signed-integer-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array signed integer data type.</span>
+-   <span class="signature">[`isUnsignedIntegerDataType( value )`][@stdlib/array/base/assert/is-unsigned-integer-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array unsigned integer data type.</span>
 
 </div>
 
@@ -88,20 +113,11 @@ The namespace exports the following:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@esm/index.mjs';
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var ns = require( '@stdlib/array-base-assert' );
 
 console.log( objectKeys( ns ) );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -125,7 +141,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -190,15 +206,41 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains/tree/esm
+[@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains
 
-[@stdlib/array/base/assert/has-same-values]: https://github.com/stdlib-js/array-base-assert-has-same-values/tree/esm
+[@stdlib/array/base/assert/has-same-values]: https://github.com/stdlib-js/array-base-assert-has-same-values
 
-[@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array/tree/esm
+[@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array
 
-[@stdlib/array/base/assert/is-complex128array]: https://github.com/stdlib-js/array-base-assert-is-complex128array/tree/esm
+[@stdlib/array/base/assert/is-complex-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-complex-floating-point-data-type
 
-[@stdlib/array/base/assert/is-complex64array]: https://github.com/stdlib-js/array-base-assert-is-complex64array/tree/esm
+[@stdlib/array/base/assert/is-complex-typed-array]: https://github.com/stdlib-js/array-base-assert-is-complex-typed-array
+
+[@stdlib/array/base/assert/is-complex128array]: https://github.com/stdlib-js/array-base-assert-is-complex128array
+
+[@stdlib/array/base/assert/is-complex64array]: https://github.com/stdlib-js/array-base-assert-is-complex64array
+
+[@stdlib/array/base/assert/is-data-type]: https://github.com/stdlib-js/array-base-assert-is-data-type
+
+[@stdlib/array/base/assert/is-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-floating-point-data-type
+
+[@stdlib/array/base/assert/is-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-integer-data-type
+
+[@stdlib/array/base/assert/is-mostly-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-mostly-safe-data-type-cast
+
+[@stdlib/array/base/assert/is-numeric-data-type]: https://github.com/stdlib-js/array-base-assert-is-numeric-data-type
+
+[@stdlib/array/base/assert/is-real-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-data-type
+
+[@stdlib/array/base/assert/is-real-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-floating-point-data-type
+
+[@stdlib/array/base/assert/is-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-safe-data-type-cast
+
+[@stdlib/array/base/assert/is-same-kind-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-same-kind-data-type-cast
+
+[@stdlib/array/base/assert/is-signed-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-signed-integer-data-type
+
+[@stdlib/array/base/assert/is-unsigned-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-unsigned-integer-data-type
 
 <!-- </toc-links> -->
 
