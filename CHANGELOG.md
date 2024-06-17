@@ -85,10 +85,11 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Jaysukh Makvana
+-   Philipp Burckhardt
 
 </section>
 
@@ -100,6 +101,7 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <details>
 
+-   [`717af94`](https://github.com/stdlib-js/stdlib/commit/717af947ab270abc5422b6d8af7dacd8f0078ca4) - **docs:** update namespace table of contents [(##2389)](#2389) _(by stdlib-bot, Philipp Burckhardt)_
 -   [`4fdb218`](https://github.com/stdlib-js/stdlib/commit/4fdb218a0272d18ce2f70d769695bceca33a7653) - **feat:** add `isBooleanArray` to namespace _(by Athan Reines)_
 -   [`57347fd`](https://github.com/stdlib-js/stdlib/commit/57347fdd4382c4a71935e7ae06d992d04d08f802) - **feat:** add `isBooleanDataType` to namespace _(by Athan Reines)_
 -   [`5fe348d`](https://github.com/stdlib-js/stdlib/commit/5fe348d99b277d10a524f75094e40244f165808c) - **feat:** add `array/base/assert/is-boolean-data-type` _(by Athan Reines)_

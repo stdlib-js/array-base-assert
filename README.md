@@ -81,6 +81,8 @@ The namespace exports the following:
 -   <span class="signature">[`contains( x, value )`][@stdlib/array/base/assert/contains]</span><span class="delimiter">: </span><span class="description">test if an array contains a provided search value.</span>
 -   <span class="signature">[`hasSameValues( x, y )`][@stdlib/array/base/assert/has-same-values]</span><span class="delimiter">: </span><span class="description">test if two arrays have the same values.</span>
 -   <span class="signature">[`isAccessorArray( value )`][@stdlib/array/base/assert/is-accessor-array]</span><span class="delimiter">: </span><span class="description">test if an array-like object supports the accessor (get/set) protocol.</span>
+-   <span class="signature">[`isBooleanDataType( value )`][@stdlib/array/base/assert/is-boolean-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array boolean data type.</span>
+-   <span class="signature">[`isBooleanArray( value )`][@stdlib/array/base/assert/is-booleanarray]</span><span class="delimiter">: </span><span class="description">test if a value is a `BooleanArray`.</span>
 -   <span class="signature">[`isComplexFloatingPointDataType( value )`][@stdlib/array/base/assert/is-complex-floating-point-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array complex-valued floating-point data type.</span>
 -   <span class="signature">[`isComplexTypedArray( value )`][@stdlib/array/base/assert/is-complex-typed-array]</span><span class="delimiter">: </span><span class="description">test if a value is a complex typed array.</span>
 -   <span class="signature">[`isComplex128Array( value )`][@stdlib/array/base/assert/is-complex128array]</span><span class="delimiter">: </span><span class="description">test if a value is a `Complex128Array`.</span>
@@ -211,6 +213,10 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/base/assert/has-same-values]: https://github.com/stdlib-js/array-base-assert-has-same-values
 
 [@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array
+
+[@stdlib/array/base/assert/is-boolean-data-type]: https://github.com/stdlib-js/array-base-assert-is-boolean-data-type
+
+[@stdlib/array/base/assert/is-booleanarray]: https://github.com/stdlib-js/array-base-assert-is-booleanarray
 
 [@stdlib/array/base/assert/is-complex-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-complex-floating-point-data-type
 
