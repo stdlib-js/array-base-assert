@@ -35,38 +35,32 @@ limitations under the License.
 
 > Base array assertion utilities.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-assert
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ns = require( 'path/to/vendor/umd/array-base-assert/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ns;
-})();
-</script>
+var ns = require( '@stdlib/array-base-assert' );
 ```
 
 #### ns
@@ -121,21 +115,75 @@ The namespace exports the following:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var ns = require( '@stdlib/array-base-assert' );
+var dtype = require( '@stdlib/array-dtype' );
+var Float64Array = require( '@stdlib/array-float64' );
+var Int32Array = require( '@stdlib/array-int32' );
+var Uint8Array = require( '@stdlib/array-uint8' );
+var Complex128Array = require( '@stdlib/array-complex128' );
 
-console.log( objectKeys( ns ) );
+// Create various arrays:
+var arr1 = new Float64Array( [ 1.1, 2.2, 3.3 ] );
+var arr2 = new Int32Array( [ 1, 2, 3 ] );
+var arr3 = new Uint8Array( [ 1, 2, 3 ] );
+var arr4 = new Complex128Array( [ 1.0, 1.0, 2.0, 2.0 ] ); // two complex numbers: 1+1i, 2+2i
 
-})();
-</script>
-</body>
-</html>
+// Get data types:
+var dt1 = dtype( arr1 );
+var dt2 = dtype( arr2 );
+var dt3 = dtype( arr3 );
+var dt4 = dtype( arr4 );
+
+// Check data types:
+console.log( dt1 + ' is floating-point data type: ' + ns.isFloatingPointDataType( dt1 ) );
+// => 'float64 is floating-point data type: true'
+
+console.log( dt2 + ' is integer data type: ' + ns.isIntegerDataType( dt2 ) );
+// => 'int32 is integer data type: true'
+
+console.log( dt3 + ' is unsigned integer data type: ' + ns.isUnsignedIntegerDataType( dt3 ) );
+// => 'uint8 is unsigned integer data type: true'
+
+console.log( dt4 + ' is complex floating-point data type: ' + ns.isComplexFloatingPointDataType( dt4 ) );
+// => 'complex128 is complex floating-point data type: true'
+
+// Check if arrays have the same values:
+console.log( 'arr2 and arr3 have same values: ' + ns.hasSameValues( arr2, arr3 ) );
+// => 'arr2 and arr3 have same values: true'
+
+console.log( 'arr1 and arr2 have same values: ' + ns.hasSameValues( arr1, arr2 ) );
+// => 'arr1 and arr2 have same values: false'
+
+// Check safe data type casts:
+console.log( 'Can safely cast from ' + dt2 + ' to ' + dt1 + ': ' + ns.isSafeDataTypeCast( dt2, dt1 ) );
+// => 'Can safely cast from int32 to float64: true'
+
+console.log( 'Can safely cast from ' + dt1 + ' to ' + dt2 + ': ' + ns.isSafeDataTypeCast( dt1, dt2 ) );
+// => 'Can safely cast from float64 to int32: false'
+
+console.log( 'Can safely cast from ' + dt3 + ' to ' + dt2 + ': ' + ns.isSafeDataTypeCast( dt3, dt2 ) );
+// => 'Can safely cast from uint8 to int32: true'
+
+console.log( 'Can safely cast from ' + dt4 + ' to ' + dt1 + ': ' + ns.isSafeDataTypeCast( dt4, dt1 ) );
+// => 'Can safely cast from complex128 to float64: false'
+
+// Check if arrays contain specific values:
+console.log( 'arr1 contains 2.2: ' + ns.contains( arr1, 2.2 ) );
+// => 'arr1 contains 2.2: true'
+
+console.log( 'arr2 contains 2: ' + ns.contains( arr2, 2 ) );
+// => 'arr2 contains 2: true'
+
+console.log( 'arr2 contains 2.2: ' + ns.contains( arr2, 2.2 ) );
+// => 'arr2 contains 2.2: false'
+
+// Check complex array types:
+console.log( 'arr4 is Complex128Array: ' + ns.isComplex128Array( arr4 ) );
+// => 'arr4 is Complex128Array: true'
+
+console.log( 'arr4 is complex typed array: ' + ns.isComplexTypedArray( arr4 ) );
+// => 'arr4 is complex typed array: true'
 ```
 
 </section>
@@ -224,45 +272,45 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains/tree/umd
+[@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains
 
-[@stdlib/array/base/assert/has-same-values]: https://github.com/stdlib-js/array-base-assert-has-same-values/tree/umd
+[@stdlib/array/base/assert/has-same-values]: https://github.com/stdlib-js/array-base-assert-has-same-values
 
-[@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array/tree/umd
+[@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array
 
-[@stdlib/array/base/assert/is-boolean-data-type]: https://github.com/stdlib-js/array-base-assert-is-boolean-data-type/tree/umd
+[@stdlib/array/base/assert/is-boolean-data-type]: https://github.com/stdlib-js/array-base-assert-is-boolean-data-type
 
-[@stdlib/array/base/assert/is-booleanarray]: https://github.com/stdlib-js/array-base-assert-is-booleanarray/tree/umd
+[@stdlib/array/base/assert/is-booleanarray]: https://github.com/stdlib-js/array-base-assert-is-booleanarray
 
-[@stdlib/array/base/assert/is-complex-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-complex-floating-point-data-type/tree/umd
+[@stdlib/array/base/assert/is-complex-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-complex-floating-point-data-type
 
-[@stdlib/array/base/assert/is-complex-typed-array]: https://github.com/stdlib-js/array-base-assert-is-complex-typed-array/tree/umd
+[@stdlib/array/base/assert/is-complex-typed-array]: https://github.com/stdlib-js/array-base-assert-is-complex-typed-array
 
-[@stdlib/array/base/assert/is-complex128array]: https://github.com/stdlib-js/array-base-assert-is-complex128array/tree/umd
+[@stdlib/array/base/assert/is-complex128array]: https://github.com/stdlib-js/array-base-assert-is-complex128array
 
-[@stdlib/array/base/assert/is-complex64array]: https://github.com/stdlib-js/array-base-assert-is-complex64array/tree/umd
+[@stdlib/array/base/assert/is-complex64array]: https://github.com/stdlib-js/array-base-assert-is-complex64array
 
-[@stdlib/array/base/assert/is-data-type]: https://github.com/stdlib-js/array-base-assert-is-data-type/tree/umd
+[@stdlib/array/base/assert/is-data-type]: https://github.com/stdlib-js/array-base-assert-is-data-type
 
-[@stdlib/array/base/assert/is-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-floating-point-data-type/tree/umd
+[@stdlib/array/base/assert/is-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-floating-point-data-type
 
-[@stdlib/array/base/assert/is-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-integer-data-type/tree/umd
+[@stdlib/array/base/assert/is-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-integer-data-type
 
-[@stdlib/array/base/assert/is-mostly-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-mostly-safe-data-type-cast/tree/umd
+[@stdlib/array/base/assert/is-mostly-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-mostly-safe-data-type-cast
 
-[@stdlib/array/base/assert/is-numeric-data-type]: https://github.com/stdlib-js/array-base-assert-is-numeric-data-type/tree/umd
+[@stdlib/array/base/assert/is-numeric-data-type]: https://github.com/stdlib-js/array-base-assert-is-numeric-data-type
 
-[@stdlib/array/base/assert/is-real-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-data-type/tree/umd
+[@stdlib/array/base/assert/is-real-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-data-type
 
-[@stdlib/array/base/assert/is-real-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-floating-point-data-type/tree/umd
+[@stdlib/array/base/assert/is-real-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-floating-point-data-type
 
-[@stdlib/array/base/assert/is-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-safe-data-type-cast/tree/umd
+[@stdlib/array/base/assert/is-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-safe-data-type-cast
 
-[@stdlib/array/base/assert/is-same-kind-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-same-kind-data-type-cast/tree/umd
+[@stdlib/array/base/assert/is-same-kind-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-same-kind-data-type-cast
 
-[@stdlib/array/base/assert/is-signed-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-signed-integer-data-type/tree/umd
+[@stdlib/array/base/assert/is-signed-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-signed-integer-data-type
 
-[@stdlib/array/base/assert/is-unsigned-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-unsigned-integer-data-type/tree/umd
+[@stdlib/array/base/assert/is-unsigned-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-unsigned-integer-data-type
 
 <!-- </toc-links> -->
 
