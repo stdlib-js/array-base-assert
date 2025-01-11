@@ -58,6 +58,7 @@
     "@stdlib/array-base-assert-is-safe-data-type-cast": "^0.3.2",
     "@stdlib/array-base-assert-is-same-kind-data-type-cast": "^0.3.2",
     "@stdlib/array-base-assert-is-signed-integer-data-type": "^0.2.1",
+    "@stdlib/array-base-assert-is-sorted-ascending": "github:stdlib-js/array-base-assert-is-sorted-ascending#main",
     "@stdlib/array-base-assert-is-unsigned-integer-data-type": "^0.2.1",
     "@stdlib/utils-define-read-only-property": "^0.2.2"
   },
@@ -67,6 +68,7 @@
     "@stdlib/array-base-arraylike2object": "^0.2.1",
     "@stdlib/array-base-getter": "^0.2.2",
     "@stdlib/array-base-ones": "^0.2.2",
+    "@stdlib/array-base-zero-to": "^0.2.1",
     "@stdlib/array-base-zeros": "^0.2.2",
     "@stdlib/array-bool": "^0.1.0",
     "@stdlib/array-byte-orders": "github:stdlib-js/array-byte-orders#main",
