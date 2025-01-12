@@ -100,6 +100,7 @@ The namespace exports the following:
 -   <span class="signature">[`isSafeDataTypeCast( from, to )`][@stdlib/array/base/assert/is-safe-data-type-cast]</span><span class="delimiter">: </span><span class="description">determine whether an array data type can be safely cast to another array data type.</span>
 -   <span class="signature">[`isSameKindDataTypeCast( from, to )`][@stdlib/array/base/assert/is-same-kind-data-type-cast]</span><span class="delimiter">: </span><span class="description">determine whether an array data type can be safely cast to, or is of the same "kind" as, another array data type.</span>
 -   <span class="signature">[`isSignedIntegerDataType( value )`][@stdlib/array/base/assert/is-signed-integer-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array signed integer data type.</span>
+-   <span class="signature">[`isSortedAscending( x )`][@stdlib/array/base/assert/is-sorted-ascending]</span><span class="delimiter">: </span><span class="description">test if an array is sorted in ascending order.</span>
 -   <span class="signature">[`isUnsignedIntegerDataType( value )`][@stdlib/array/base/assert/is-unsigned-integer-data-type]</span><span class="delimiter">: </span><span class="description">test if an input value is a supported array unsigned integer data type.</span>
 
 </div>
@@ -318,6 +319,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/base/assert/is-same-kind-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-same-kind-data-type-cast
 
 [@stdlib/array/base/assert/is-signed-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-signed-integer-data-type
+
+[@stdlib/array/base/assert/is-sorted-ascending]: https://github.com/stdlib-js/array-base-assert-is-sorted-ascending
 
 [@stdlib/array/base/assert/is-unsigned-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-unsigned-integer-data-type
 
