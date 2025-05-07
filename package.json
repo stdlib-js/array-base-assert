@@ -36,6 +36,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-base-assert-any-has-own-property": "github:stdlib-js/array-base-assert-any-has-own-property#main",
     "@stdlib/array-base-assert-any-has-property": "github:stdlib-js/array-base-assert-any-has-property#main",
     "@stdlib/array-base-assert-contains": "^0.2.2",
     "@stdlib/array-base-assert-has-equal-values": "github:stdlib-js/array-base-assert-has-equal-values#main",
