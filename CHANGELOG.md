@@ -4,142 +4,28 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-24)
-
-<section class="packages">
-
-### Packages
-
-<section class="package" id="array-base-assert-unreleased">
-
-#### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
-
-<details>
+## Unreleased (2025-05-07)
 
 <section class="features">
 
-##### Features
+### Features
 
+-   [`2ab5cd8`](https://github.com/stdlib-js/stdlib/commit/2ab5cd84a76425d34ed204d222c33a000107b8d0) - add `anyHasProp` to namespace
+-   [`ccd5ca6`](https://github.com/stdlib-js/stdlib/commit/ccd5ca60ccf12f9480f930547afb60da9732bf59) - add `array/base/assert/any-has-property`
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706)
 -   [`d11aaf3`](https://github.com/stdlib-js/stdlib/commit/d11aaf3e4ea651384185655584eea9c5b8ca9ae2) - add `isSortedAscending` to namespace
+-   [`5a848eb`](https://github.com/stdlib-js/stdlib/commit/5a848ebda6a2ff9cc34cfa5cf93ffce65b8bab0e) - add `array/base/assert/is-sorted-ascending`
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec) - update namespace TypeScript declarations [(#3190)](https://github.com/stdlib-js/stdlib/pull/3190)
 -   [`43aa58f`](https://github.com/stdlib-js/stdlib/commit/43aa58f81dcad604f11a5715a1546c015b0a9623) - add `isByteOrder` to namespace
+-   [`b18478e`](https://github.com/stdlib-js/stdlib/commit/b18478e236e9cb6991d5a0f952d217e043e46587) - add `array/base/assert/is-byte-order`
 -   [`81b39fe`](https://github.com/stdlib-js/stdlib/commit/81b39fec06b8575149b2ab1b834a7577e6ac5e5d) - add `hasEqualValuesIndexed` to namespace
+-   [`036794c`](https://github.com/stdlib-js/stdlib/commit/036794c19bd65d13a60c098a5423cf12e1be5d12) - add `array/base/assert/has-equal-values-indexed`
 -   [`cc56538`](https://github.com/stdlib-js/stdlib/commit/cc5653806325fe7b63037dfa49108be8016de3fc) - add `hasEqualValues` to namespace
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec): update namespace declarations
-
-    -   To migrate, users should consult the corresponding packages containing the respective implementations to determine what is breaking. The primary breakages come from the `blas/*` namespace, where we recently refactored how top-level BLAS APIs operate on input arguments.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-has-equal-values-unreleased">
-
-#### [@stdlib/array/base/assert/has-equal-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-equal-values)
-
-<details>
-
-<section class="features">
-
-##### Features
-
 -   [`4cdf27e`](https://github.com/stdlib-js/stdlib/commit/4cdf27e87b904ab762b3e7c1034dd27f7466383c) - add `array/base/assert/has-equal-values`
 
 </section>
 
 <!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-has-equal-values-indexed-unreleased">
-
-#### [@stdlib/array/base/assert/has-equal-values-indexed](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-equal-values-indexed)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`036794c`](https://github.com/stdlib-js/stdlib/commit/036794c19bd65d13a60c098a5423cf12e1be5d12) - add `array/base/assert/has-equal-values-indexed`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-byte-order-unreleased">
-
-#### [@stdlib/array/base/assert/is-byte-order](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-byte-order)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`b18478e`](https://github.com/stdlib-js/stdlib/commit/b18478e236e9cb6991d5a0f952d217e043e46587) - add `array/base/assert/is-byte-order`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-sorted-ascending-unreleased">
-
-#### [@stdlib/array/base/assert/is-sorted-ascending](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-sorted-ascending)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`5a848eb`](https://github.com/stdlib-js/stdlib/commit/5a848ebda6a2ff9cc34cfa5cf93ffce65b8bab0e) - add `array/base/assert/is-sorted-ascending`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
 
 <section class="breaking-changes">
 
@@ -153,26 +39,15 @@
 
 <!-- /.breaking-changes -->
 
-<section class="contributors">
-
-### Contributors
-
-A total of 3 people contributed to this release. Thank you to the following contributors:
-
--   Athan Reines
--   Philipp Burckhardt
--   Soumajit Chatterjee
-
-</section>
-
-<!-- /.contributors -->
-
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`d1a712d`](https://github.com/stdlib-js/stdlib/commit/d1a712db9218350f4e37926ac993b97573b65ba9) - **docs:** demonstrate prototype property _(by Athan Reines)_
+-   [`2ab5cd8`](https://github.com/stdlib-js/stdlib/commit/2ab5cd84a76425d34ed204d222c33a000107b8d0) - **feat:** add `anyHasProp` to namespace _(by Athan Reines)_
+-   [`ccd5ca6`](https://github.com/stdlib-js/stdlib/commit/ccd5ca60ccf12f9480f930547afb60da9732bf59) - **feat:** add `array/base/assert/any-has-property` _(by Athan Reines)_
 -   [`e661213`](https://github.com/stdlib-js/stdlib/commit/e66121352ef767cdb87d19e938b1eccf7970fa3a) - **feat:** update namespace TypeScript declarations [(#4706)](https://github.com/stdlib-js/stdlib/pull/4706) _(by stdlib-bot)_
 -   [`cff470f`](https://github.com/stdlib-js/stdlib/commit/cff470f9608165100c8c122fce70c40b1af864ec) - **docs:** update namespace table of contents (#4708) _(by stdlib-bot, Planeshifter)_
 -   [`d11aaf3`](https://github.com/stdlib-js/stdlib/commit/d11aaf3e4ea651384185655584eea9c5b8ca9ae2) - **feat:** add `isSortedAscending` to namespace _(by Athan Reines)_
@@ -198,6 +73,20 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <!-- /.commits -->
 
+<section class="contributors">
+
+### Contributors
+
+A total of 3 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+-   Soumajit Chatterjee
+
+</section>
+
+<!-- /.contributors -->
+
 </section>
 
 <!-- /.release -->
@@ -206,117 +95,20 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ## 0.3.0 (2024-07-29)
 
-<section class="packages">
-
-### Packages
-
-<section class="package" id="array-base-assert-v0.3.0">
-
-#### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
-
-<details>
-
 <section class="features">
 
-##### Features
+### Features
 
+-   [`a7947d0`](https://github.com/stdlib-js/stdlib/commit/a7947d0856e5c65f863841b0205c05b6f6cc2eec) - add boolean dtype support to `array/base/assert/has-same-values` [(#2404)](https://github.com/stdlib-js/stdlib/pull/2404)
 -   [`d626ffa`](https://github.com/stdlib-js/stdlib/commit/d626ffac9f0504be236c94afd4b920032272c8bf) - update namespace TypeScript declarations [(#2394)](https://github.com/stdlib-js/stdlib/pull/2394)
 -   [`4fdb218`](https://github.com/stdlib-js/stdlib/commit/4fdb218a0272d18ce2f70d769695bceca33a7653) - add `isBooleanArray` to namespace
 -   [`57347fd`](https://github.com/stdlib-js/stdlib/commit/57347fdd4382c4a71935e7ae06d992d04d08f802) - add `isBooleanDataType` to namespace
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-has-same-values-v0.3.0">
-
-#### [@stdlib/array/base/assert/has-same-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-same-values)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`a7947d0`](https://github.com/stdlib-js/stdlib/commit/a7947d0856e5c65f863841b0205c05b6f6cc2eec) - add boolean dtype support to `array/base/assert/has-same-values` [(#2404)](https://github.com/stdlib-js/stdlib/pull/2404)
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-boolean--v0.3.0">
-
-#### [@stdlib/array/base/assert/is-boolean-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-boolean-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
 -   [`5fe348d`](https://github.com/stdlib-js/stdlib/commit/5fe348d99b277d10a524f75094e40244f165808c) - add `array/base/assert/is-boolean-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-booleanarray-v0.3.0">
-
-#### [@stdlib/array/base/assert/is-booleanarray](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-booleanarray)
-
-<details>
-
-<section class="features">
-
-##### Features
-
 -   [`ce961d9`](https://github.com/stdlib-js/stdlib/commit/ce961d921bc120e3c45c3df1381793072febf721) - add `array/base/assert/is-booleanarray` [(#2357)](https://github.com/stdlib-js/stdlib/pull/2357)
 
 </section>
 
 <!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 3 people contributed to this release. Thank you to the following contributors:
-
--   Athan Reines
--   Jaysukh Makvana
--   Philipp Burckhardt
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -339,6 +131,20 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 <!-- /.commits -->
 
+<section class="contributors">
+
+### Contributors
+
+A total of 3 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Jaysukh Makvana
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
 </section>
 
 <!-- /.release -->
@@ -347,70 +153,17 @@ A total of 3 people contributed to this release. Thank you to the following cont
 
 ## 0.2.1 (2024-02-25)
 
-<section class="packages">
-
-### Packages
-
-<section class="package" id="array-base-assert-v0.2.1">
-
-#### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
-
-<details>
-
 <section class="features">
 
-##### Features
+### Features
 
 -   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb) - update namespace TypeScript declarations [(#1340)](https://github.com/stdlib-js/stdlib/pull/1340)
 -   [`ff36d97`](https://github.com/stdlib-js/stdlib/commit/ff36d97450ec1ab28aeeaf2aab882757e0fb4439) - add `isComplexTypedArray` to namespace
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`0adcae5`](https://github.com/stdlib-js/stdlib/commit/0adcae51386086e2ef5fb5d78402389cff776deb): rename exported aliases
-
-    -   To migrate, users should consult the relevant namespace documentation and associated commits in order to determine which aliases have been renamed.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-complex-typed-array-v0.2.1">
-
-#### [@stdlib/array/base/assert/is-complex-typed-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex-typed-array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
 -   [`9050a7e`](https://github.com/stdlib-js/stdlib/commit/9050a7e4d58e4b418e5076eb9ec9661a2e716681) - add `array/base/assert/is-complex-typed-array`
 
 </section>
 
 <!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
 
 <section class="breaking-changes">
 
@@ -423,18 +176,6 @@ A total of 3 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.breaking-changes -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 1 person contributed to this release. Thank you to this contributor:
-
--   Athan Reines
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -453,6 +194,18 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <!-- /.commits -->
 
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
 </section>
 
 <!-- /.release -->
@@ -461,393 +214,45 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 ## 0.2.0 (2024-02-15)
 
-<section class="packages">
-
-### Packages
-
-<section class="package" id="array-base-assert-v0.2.0">
-
-#### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
-
-<details>
-
 <section class="features">
 
-##### Features
+### Features
 
 -   [`0c5beb2`](https://github.com/stdlib-js/stdlib/commit/0c5beb2e954c52aa9f04b47673458c2b7baf60a3) - add `isUnsignedIntegerDataType` to namespace
+-   [`d12c919`](https://github.com/stdlib-js/stdlib/commit/d12c91942051477dcadd655a5784e3bdbbbee5aa) - add `array/base/assert/is-unsigned-integer-data-type`
 -   [`9f0a814`](https://github.com/stdlib-js/stdlib/commit/9f0a81470bc0bacfb1250aac12db3976614486c6) - add `isSignedIntegerDataType` to namespace
+-   [`9196de1`](https://github.com/stdlib-js/stdlib/commit/9196de1bea30f6bdfcd0372a9f95484b41b4df40) - add `array/base/assert/is-signed-integer-data-type`
 -   [`dfd72a7`](https://github.com/stdlib-js/stdlib/commit/dfd72a73fb6a6bdd8fb587a851fa505f28df0846) - add `isRealFloatingPointDataType` to namespace
+-   [`9f2b15f`](https://github.com/stdlib-js/stdlib/commit/9f2b15f0f89110e5d2a63f08af0de898afc83e9b) - add `array/base/assert/is-real-floating-point-data-type`
 -   [`6b5229c`](https://github.com/stdlib-js/stdlib/commit/6b5229cfb3d9dffb9ab72e520a896fe610748717) - add `isRealDataType` to namespace
+-   [`722dd80`](https://github.com/stdlib-js/stdlib/commit/722dd8090628f53b8fa436177c11f25202bdcc1d) - add `array/base/assert/is-real-data-type`
 -   [`a9000da`](https://github.com/stdlib-js/stdlib/commit/a9000da38017bd56f73e20d99c7588c1c2454942) - add `isNumericDataType` to namespace
+-   [`2f0979e`](https://github.com/stdlib-js/stdlib/commit/2f0979e82fc21d2d5eb75b84cb8501fdf267699a) - add `array/base/assert/is-numeric-data-type`
 -   [`d37669b`](https://github.com/stdlib-js/stdlib/commit/d37669bbb8c5a7a20d8684d3989473443968c109) - add `isIntegerDataType` to namespace
+-   [`d19f0b4`](https://github.com/stdlib-js/stdlib/commit/d19f0b4a323bdcde5f4a62cdba99eb6378ceaea4) - add `array/base/assert/is-integer-data-type`
 -   [`320f9d1`](https://github.com/stdlib-js/stdlib/commit/320f9d1332dae4802cd30b40a4de9d4fd06c90b9) - add `isFloatingPointDataType` to namespace
+-   [`909ffed`](https://github.com/stdlib-js/stdlib/commit/909ffedb3faddefa5eee4a0cf1895a2cba9d0624) - add `array/base/assert/is-floating-point-data-type`
 -   [`38f5518`](https://github.com/stdlib-js/stdlib/commit/38f5518fd4d806907a05ab8c4d3341d22c8cd92a) - add `isDataType` to namespace
+-   [`40368ee`](https://github.com/stdlib-js/stdlib/commit/40368ee23a7c9852cbf1806f8cd8b2e6e287c658) - add `array/base/assert/is-data-type`
 -   [`a808e96`](https://github.com/stdlib-js/stdlib/commit/a808e96e184a073ba654643b556a06031d4fd207) - add `isComplexFloatingPointDataType` to namespace
+-   [`db7f8d1`](https://github.com/stdlib-js/stdlib/commit/db7f8d154e7574a9f6997f52ebdc65772bf2f167) - add `array/base/assert/is-complex-floating-point-data-type`
 -   [`6ded0bb`](https://github.com/stdlib-js/stdlib/commit/6ded0bb97881e1cb1983eb83a2a55faba3f56864) - add `isSameKindDataTypeCast` to namespace
+-   [`37bd821`](https://github.com/stdlib-js/stdlib/commit/37bd821173a8a972d42ed673950ed5c27dfd02ff) - add `array/base/assert/is-same-kind-data-type-cast`
 -   [`92926cb`](https://github.com/stdlib-js/stdlib/commit/92926cbc4f09caaf650266ddaba3dbdacd9d090e) - add `isSafeDataTypeCast` to namespace
+-   [`4534cc2`](https://github.com/stdlib-js/stdlib/commit/4534cc2e77d6603371f8ed213b9f2f4a306706a0) - add `array/base/assert/is-safe-data-type-cast`
 -   [`4429999`](https://github.com/stdlib-js/stdlib/commit/4429999d900848d873146e1c1a5a3748740d4410) - add `isMostlySafeDataTypeCast` to namespace
+-   [`652d790`](https://github.com/stdlib-js/stdlib/commit/652d790dda286e28a01124f4cec66bbbbc9fb2ff) - add `array/base/assert/is-mostly-safe-data-type-cast`
 -   [`2693e3b`](https://github.com/stdlib-js/stdlib/commit/2693e3b3f0382542a51fc57d78e9ab59e2dc0681) - update namespace TypeScript declarations [(#1287)](https://github.com/stdlib-js/stdlib/pull/1287)
 -   [`900672d`](https://github.com/stdlib-js/stdlib/commit/900672dc32fce7a9e276bff41a357cac45d852e3) - add `hasSameValues` to namespace
--   [`d6e93a8`](https://github.com/stdlib-js/stdlib/commit/d6e93a89926046fbdeb40f233a748cd3c1b62423) - add `isComplex128Array` to namespace
--   [`68d21bb`](https://github.com/stdlib-js/stdlib/commit/68d21bb6e1ccdc4de6784f9cd8c3c3db48a2da0d) - add `isComplex64Array` to namespace
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-has-same-values-v0.2.0">
-
-#### [@stdlib/array/base/assert/has-same-values](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/has-same-values)
-
-<details>
-
-<section class="features">
-
-##### Features
-
 -   [`9d59fff`](https://github.com/stdlib-js/stdlib/commit/9d59fff0ce02b51d0a9fc94dc7d11e45c5bbac5d) - add `array/base/assert/has-same-values`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`40368ee`](https://github.com/stdlib-js/stdlib/commit/40368ee23a7c9852cbf1806f8cd8b2e6e287c658) - add `array/base/assert/is-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-complex-floating-point--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-complex-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex-floating-point-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`db7f8d1`](https://github.com/stdlib-js/stdlib/commit/db7f8d154e7574a9f6997f52ebdc65772bf2f167) - add `array/base/assert/is-complex-floating-point-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-complex128array-v0.2.0">
-
-#### [@stdlib/array/base/assert/is-complex128array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex128array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
+-   [`d6e93a8`](https://github.com/stdlib-js/stdlib/commit/d6e93a89926046fbdeb40f233a748cd3c1b62423) - add `isComplex128Array` to namespace
 -   [`d25df9e`](https://github.com/stdlib-js/stdlib/commit/d25df9ed0cfb8c19af5dcf6df2b4d2ccde3d2d95) - add `array/base/assert/is-complex128array`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-complex64array-v0.2.0">
-
-#### [@stdlib/array/base/assert/is-complex64array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-complex64array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
+-   [`68d21bb`](https://github.com/stdlib-js/stdlib/commit/68d21bb6e1ccdc4de6784f9cd8c3c3db48a2da0d) - add `isComplex64Array` to namespace
 -   [`e770600`](https://github.com/stdlib-js/stdlib/commit/e77060013a56b9f3c7c60606a8235348b95e0c85) - add `array/base/assert/is-complex64array`
 
 </section>
 
 <!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-floating-point--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-floating-point-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`909ffed`](https://github.com/stdlib-js/stdlib/commit/909ffedb3faddefa5eee4a0cf1895a2cba9d0624) - add `array/base/assert/is-floating-point-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-integer--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-integer-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`d19f0b4`](https://github.com/stdlib-js/stdlib/commit/d19f0b4a323bdcde5f4a62cdba99eb6378ceaea4) - add `array/base/assert/is-integer-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-mostly-safe--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-mostly-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-mostly-safe-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`652d790`](https://github.com/stdlib-js/stdlib/commit/652d790dda286e28a01124f4cec66bbbbc9fb2ff) - add `array/base/assert/is-mostly-safe-data-type-cast`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-numeric--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-numeric-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-numeric-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`2f0979e`](https://github.com/stdlib-js/stdlib/commit/2f0979e82fc21d2d5eb75b84cb8501fdf267699a) - add `array/base/assert/is-numeric-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-real--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-real-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-real-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`722dd80`](https://github.com/stdlib-js/stdlib/commit/722dd8090628f53b8fa436177c11f25202bdcc1d) - add `array/base/assert/is-real-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-real-floating-point--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-real-floating-point-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-real-floating-point-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`9f2b15f`](https://github.com/stdlib-js/stdlib/commit/9f2b15f0f89110e5d2a63f08af0de898afc83e9b) - add `array/base/assert/is-real-floating-point-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-safe--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-safe-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-safe-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`4534cc2`](https://github.com/stdlib-js/stdlib/commit/4534cc2e77d6603371f8ed213b9f2f4a306706a0) - add `array/base/assert/is-safe-data-type-cast`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-same-kind--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-same-kind-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-same-kind-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`37bd821`](https://github.com/stdlib-js/stdlib/commit/37bd821173a8a972d42ed673950ed5c27dfd02ff) - add `array/base/assert/is-same-kind-data-type-cast`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-signed-integer--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-signed-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-signed-integer-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`9196de1`](https://github.com/stdlib-js/stdlib/commit/9196de1bea30f6bdfcd0372a9f95484b41b4df40) - add `array/base/assert/is-signed-integer-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-unsigned-integer--v0.2.0">
-
-#### [@stdlib/array/base/assert/is-unsigned-integer-](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-unsigned-integer-)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`d12c919`](https://github.com/stdlib-js/stdlib/commit/d12c91942051477dcadd655a5784e3bdbbbee5aa) - add `array/base/assert/is-unsigned-integer-data-type`
-
-</section>
-
-<!-- /.features -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 2 people contributed to this release. Thank you to the following contributors:
-
--   Athan Reines
--   Philipp Burckhardt
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -901,6 +306,19 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <!-- /.commits -->
 
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
 </section>
 
 <!-- /.release -->
@@ -909,57 +327,15 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 ## 0.1.0 (2023-09-24)
 
-<section class="packages">
-
-### Packages
-
-<section class="package" id="array-base-assert-v0.1.0">
-
-#### [@stdlib/array/base/assert](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert)
-
-<details>
-
 <section class="features">
 
-##### Features
+### Features
 
 -   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017) - update minimum TypeScript version
--   [`3a88e07`](https://github.com/stdlib-js/stdlib/commit/3a88e0722e77578534f0567b9336d4f7ae83470e) - add `contains` to namespace
-
-</section>
-
-<!-- /.features -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`e29732d`](https://github.com/stdlib-js/stdlib/commit/e29732dee616e2d94e91f87f78afd8aceb806017): update minimum TypeScript version to 4.1
-
-    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-contains-v0.1.0">
-
-#### [@stdlib/array/base/assert/contains](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/contains)
-
-<details>
-
-<section class="features">
-
-##### Features
-
+-   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305) - refactor declarations to allow narrowing
 -   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db) - update minimum TypeScript version
 -   [`0424cf8`](https://github.com/stdlib-js/stdlib/commit/0424cf8b80b1e0c50ea209d9b05730a8b950f4a5) - add `factory` method
+-   [`3a88e07`](https://github.com/stdlib-js/stdlib/commit/3a88e0722e77578534f0567b9336d4f7ae83470e) - add `contains` to namespace
 -   [`41aa6d6`](https://github.com/stdlib-js/stdlib/commit/41aa6d65a111dcd2dbd59f33520fd6da03de374b) - add `array/base/assert/contains`
 
 </section>
@@ -968,75 +344,13 @@ A total of 2 people contributed to this release. Thank you to the following cont
 
 <section class="bug-fixes">
 
-##### Bug Fixes
+### Bug Fixes
 
 -   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
 
 </section>
 
 <!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`05d73c2`](https://github.com/stdlib-js/stdlib/commit/05d73c2d3c4a1c0250f81da207805848196694db): update minimum TypeScript version
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-<section class="package" id="array-base-assert-is-accessor-array-v0.1.0">
-
-#### [@stdlib/array/base/assert/is-accessor-array](https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/assert/is-accessor-array)
-
-<details>
-
-<section class="features">
-
-##### Features
-
--   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305) - refactor declarations to allow narrowing
-
-</section>
-
-<!-- /.features -->
-
-<section class="bug-fixes">
-
-##### Bug Fixes
-
--   [`14bacb3`](https://github.com/stdlib-js/stdlib/commit/14bacb3cbfced427bcbadae7cbc649a62bb62b69) - update import path for `Collection` type definition
-
-</section>
-
-<!-- /.bug-fixes -->
-
-<section class="breaking-changes">
-
-##### BREAKING CHANGES
-
--   [`7b7f001`](https://github.com/stdlib-js/stdlib/commit/7b7f001b6f0d25a71ae27bda216c911dfa844305): refactor declarations to allow narrowing
-
-</section>
-
-<!-- /.breaking-changes -->
-
-</details>
-
-</section>
-
-<!-- /.package -->
-
-</section>
-
-<!-- /.packages -->
 
 <section class="breaking-changes">
 
@@ -1052,19 +366,6 @@ A total of 2 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.breaking-changes -->
-
-<section class="contributors">
-
-### Contributors
-
-A total of 2 people contributed to this release. Thank you to the following contributors:
-
--   Athan Reines
--   Philipp Burckhardt
-
-</section>
-
-<!-- /.contributors -->
 
 <section class="commits">
 
@@ -1088,6 +389,19 @@ A total of 2 people contributed to this release. Thank you to the following cont
 </section>
 
 <!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
