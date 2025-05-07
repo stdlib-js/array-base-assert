@@ -38,6 +38,8 @@
   "dependencies": {
     "@stdlib/array-base-assert-any-has-own-property": "github:stdlib-js/array-base-assert-any-has-own-property#main",
     "@stdlib/array-base-assert-any-has-property": "github:stdlib-js/array-base-assert-any-has-property#main",
+    "@stdlib/array-base-assert-any-is-entry": "github:stdlib-js/array-base-assert-any-is-entry#main",
+    "@stdlib/array-base-assert-any-is-entry-in": "github:stdlib-js/array-base-assert-any-is-entry-in#main",
     "@stdlib/array-base-assert-contains": "^0.2.2",
     "@stdlib/array-base-assert-has-equal-values": "github:stdlib-js/array-base-assert-has-equal-values#main",
     "@stdlib/array-base-assert-has-equal-values-indexed": "github:stdlib-js/array-base-assert-has-equal-values-indexed#main",
