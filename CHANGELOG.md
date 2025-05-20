@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-08)
+## Unreleased (2025-05-20)
 
 <section class="features">
 
@@ -45,12 +45,27 @@
 
 <!-- /.breaking-changes -->
 
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#7030](https://github.com/stdlib-js/stdlib/issues/7030)
+
+</section>
+
+<!-- /.issues -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`89d9dc3`](https://github.com/stdlib-js/stdlib/commit/89d9dc316985aa3c194222afbf8146e58ff6d761) - **docs:** update namespace table of contents [(#7046)](https://github.com/stdlib-js/stdlib/pull/7046) _(by stdlib-bot)_
+-   [`99f515d`](https://github.com/stdlib-js/stdlib/commit/99f515d651fe793e13b1df6ff95f39200fad0ff1) - **docs:** update parameter types _(by Athan Reines)_
+-   [`02109aa`](https://github.com/stdlib-js/stdlib/commit/02109aa28a0c48a2d6b92de3423614204a39431e) - **chore:** address commit comments for commit `fbffea0` [(#7038)](https://github.com/stdlib-js/stdlib/pull/7038) _(by Sachin Raj, Philipp Burckhardt)_
 -   [`c29e97b`](https://github.com/stdlib-js/stdlib/commit/c29e97b6388cecff97906f3613880765b601da2a) - **docs:** update namespace table of contents [(#6948)](https://github.com/stdlib-js/stdlib/pull/6948) _(by stdlib-bot, Athan Reines)_
 -   [`0f6d4e7`](https://github.com/stdlib-js/stdlib/commit/0f6d4e7694d458f76dc077d5b618e405f6cfed37) - **feat:** add `anyIsEntry` to namespace _(by Athan Reines)_
 -   [`fbffea0`](https://github.com/stdlib-js/stdlib/commit/fbffea0a7be15b6013111fd0b613548d7c09a1b7) - **feat:** add `array/base/assert/any-is-entry` _(by Athan Reines)_
@@ -91,10 +106,11 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Philipp Burckhardt
+-   Sachin Raj
 -   Soumajit Chatterjee
 
 </section>
