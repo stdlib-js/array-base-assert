@@ -35,20 +35,32 @@ limitations under the License.
 
 > Base array assertion utilities.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-assert
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { anyHasOwnProp, anyHasProp, anyIsEntry, anyIsEntryIn, contains, hasEqualValues, hasEqualValuesIndexed, hasSameValues, isAccessorArray, isBooleanArray, isBooleanDataType, isByteOrder, isComplex128Array, isComplex64Array, isComplexFloatingPointDataType, isComplexTypedArray, isDataType, isFloatingPointDataType, isIntegerDataType, isMostlySafeDataTypeCast, isNumericDataType, isRealDataType, isRealFloatingPointDataType, isSafeDataTypeCast, isSameKindDataTypeCast, isSignedIntegerDataType, isSortedAscending, isUnsignedIntegerDataType } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
+var ns = require( '@stdlib/array-base-assert' );
 ```
 
 #### ns
@@ -69,7 +81,7 @@ The namespace exports the following:
 -   <span class="signature">[`anyHasOwnProp( arr, property )`][@stdlib/array/base/assert/any-has-own-property]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a provided array has a specified own property.</span>
 -   <span class="signature">[`anyHasProp( arr, property )`][@stdlib/array/base/assert/any-has-property]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a provided array has a specified property, either own or inherited.</span>
 -   <span class="signature">[`anyIsEntryIn( arr, property )`][@stdlib/array/base/assert/any-is-entry-in]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a provided array has a specified property key-value pair, either own or inherited.</span>
--   <span class="signature">[`anyIsEntry( arr, property )`][@stdlib/array/base/assert/any-is-entry]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a provided array has a specified own property key-value pair.</span>
+-   <span class="signature">[`anyIsEntry( arr, property, value )`][@stdlib/array/base/assert/any-is-entry]</span><span class="delimiter">: </span><span class="description">test whether at least one element in a provided array has a specified own property key-value pair.</span>
 -   <span class="signature">[`contains( x, value )`][@stdlib/array/base/assert/contains]</span><span class="delimiter">: </span><span class="description">test if an array contains a provided search value.</span>
 -   <span class="signature">[`hasEqualValuesIndexed( x, y )`][@stdlib/array/base/assert/has-equal-values-indexed]</span><span class="delimiter">: </span><span class="description">test if two indexed arrays have equal values.</span>
 -   <span class="signature">[`hasEqualValues( x, y )`][@stdlib/array/base/assert/has-equal-values]</span><span class="delimiter">: </span><span class="description">test if two arrays have equal values.</span>
@@ -112,12 +124,12 @@ The namespace exports the following:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
-import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
-import Uint8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-uint8@deno/mod.js';
-import Complex128Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex128@deno/mod.js';
+var ns = require( '@stdlib/array-base-assert' );
+var dtype = require( '@stdlib/array-dtype' );
+var Float64Array = require( '@stdlib/array-float64' );
+var Int32Array = require( '@stdlib/array-int32' );
+var Uint8Array = require( '@stdlib/array-uint8' );
+var Complex128Array = require( '@stdlib/array-complex128' );
 
 // Create various arrays:
 var arr1 = new Float64Array( [ 1.1, 2.2, 3.3 ] );
@@ -203,7 +215,7 @@ console.log( 'arr4 is complex typed array: ' + ns.isComplexTypedArray( arr4 ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -268,61 +280,61 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/array/base/assert/any-has-own-property]: https://github.com/stdlib-js/array-base-assert-any-has-own-property/tree/deno
+[@stdlib/array/base/assert/any-has-own-property]: https://github.com/stdlib-js/array-base-assert-any-has-own-property
 
-[@stdlib/array/base/assert/any-has-property]: https://github.com/stdlib-js/array-base-assert-any-has-property/tree/deno
+[@stdlib/array/base/assert/any-has-property]: https://github.com/stdlib-js/array-base-assert-any-has-property
 
-[@stdlib/array/base/assert/any-is-entry-in]: https://github.com/stdlib-js/array-base-assert-any-is-entry-in/tree/deno
+[@stdlib/array/base/assert/any-is-entry-in]: https://github.com/stdlib-js/array-base-assert-any-is-entry-in
 
-[@stdlib/array/base/assert/any-is-entry]: https://github.com/stdlib-js/array-base-assert-any-is-entry/tree/deno
+[@stdlib/array/base/assert/any-is-entry]: https://github.com/stdlib-js/array-base-assert-any-is-entry
 
-[@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains/tree/deno
+[@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains
 
-[@stdlib/array/base/assert/has-equal-values-indexed]: https://github.com/stdlib-js/array-base-assert-has-equal-values-indexed/tree/deno
+[@stdlib/array/base/assert/has-equal-values-indexed]: https://github.com/stdlib-js/array-base-assert-has-equal-values-indexed
 
-[@stdlib/array/base/assert/has-equal-values]: https://github.com/stdlib-js/array-base-assert-has-equal-values/tree/deno
+[@stdlib/array/base/assert/has-equal-values]: https://github.com/stdlib-js/array-base-assert-has-equal-values
 
-[@stdlib/array/base/assert/has-same-values]: https://github.com/stdlib-js/array-base-assert-has-same-values/tree/deno
+[@stdlib/array/base/assert/has-same-values]: https://github.com/stdlib-js/array-base-assert-has-same-values
 
-[@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array/tree/deno
+[@stdlib/array/base/assert/is-accessor-array]: https://github.com/stdlib-js/array-base-assert-is-accessor-array
 
-[@stdlib/array/base/assert/is-boolean-data-type]: https://github.com/stdlib-js/array-base-assert-is-boolean-data-type/tree/deno
+[@stdlib/array/base/assert/is-boolean-data-type]: https://github.com/stdlib-js/array-base-assert-is-boolean-data-type
 
-[@stdlib/array/base/assert/is-booleanarray]: https://github.com/stdlib-js/array-base-assert-is-booleanarray/tree/deno
+[@stdlib/array/base/assert/is-booleanarray]: https://github.com/stdlib-js/array-base-assert-is-booleanarray
 
-[@stdlib/array/base/assert/is-byte-order]: https://github.com/stdlib-js/array-base-assert-is-byte-order/tree/deno
+[@stdlib/array/base/assert/is-byte-order]: https://github.com/stdlib-js/array-base-assert-is-byte-order
 
-[@stdlib/array/base/assert/is-complex-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-complex-floating-point-data-type/tree/deno
+[@stdlib/array/base/assert/is-complex-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-complex-floating-point-data-type
 
-[@stdlib/array/base/assert/is-complex-typed-array]: https://github.com/stdlib-js/array-base-assert-is-complex-typed-array/tree/deno
+[@stdlib/array/base/assert/is-complex-typed-array]: https://github.com/stdlib-js/array-base-assert-is-complex-typed-array
 
-[@stdlib/array/base/assert/is-complex128array]: https://github.com/stdlib-js/array-base-assert-is-complex128array/tree/deno
+[@stdlib/array/base/assert/is-complex128array]: https://github.com/stdlib-js/array-base-assert-is-complex128array
 
-[@stdlib/array/base/assert/is-complex64array]: https://github.com/stdlib-js/array-base-assert-is-complex64array/tree/deno
+[@stdlib/array/base/assert/is-complex64array]: https://github.com/stdlib-js/array-base-assert-is-complex64array
 
-[@stdlib/array/base/assert/is-data-type]: https://github.com/stdlib-js/array-base-assert-is-data-type/tree/deno
+[@stdlib/array/base/assert/is-data-type]: https://github.com/stdlib-js/array-base-assert-is-data-type
 
-[@stdlib/array/base/assert/is-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-floating-point-data-type/tree/deno
+[@stdlib/array/base/assert/is-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-floating-point-data-type
 
-[@stdlib/array/base/assert/is-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-integer-data-type/tree/deno
+[@stdlib/array/base/assert/is-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-integer-data-type
 
-[@stdlib/array/base/assert/is-mostly-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-mostly-safe-data-type-cast/tree/deno
+[@stdlib/array/base/assert/is-mostly-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-mostly-safe-data-type-cast
 
-[@stdlib/array/base/assert/is-numeric-data-type]: https://github.com/stdlib-js/array-base-assert-is-numeric-data-type/tree/deno
+[@stdlib/array/base/assert/is-numeric-data-type]: https://github.com/stdlib-js/array-base-assert-is-numeric-data-type
 
-[@stdlib/array/base/assert/is-real-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-data-type/tree/deno
+[@stdlib/array/base/assert/is-real-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-data-type
 
-[@stdlib/array/base/assert/is-real-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-floating-point-data-type/tree/deno
+[@stdlib/array/base/assert/is-real-floating-point-data-type]: https://github.com/stdlib-js/array-base-assert-is-real-floating-point-data-type
 
-[@stdlib/array/base/assert/is-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-safe-data-type-cast/tree/deno
+[@stdlib/array/base/assert/is-safe-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-safe-data-type-cast
 
-[@stdlib/array/base/assert/is-same-kind-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-same-kind-data-type-cast/tree/deno
+[@stdlib/array/base/assert/is-same-kind-data-type-cast]: https://github.com/stdlib-js/array-base-assert-is-same-kind-data-type-cast
 
-[@stdlib/array/base/assert/is-signed-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-signed-integer-data-type/tree/deno
+[@stdlib/array/base/assert/is-signed-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-signed-integer-data-type
 
-[@stdlib/array/base/assert/is-sorted-ascending]: https://github.com/stdlib-js/array-base-assert-is-sorted-ascending/tree/deno
+[@stdlib/array/base/assert/is-sorted-ascending]: https://github.com/stdlib-js/array-base-assert-is-sorted-ascending
 
-[@stdlib/array/base/assert/is-unsigned-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-unsigned-integer-data-type/tree/deno
+[@stdlib/array/base/assert/is-unsigned-integer-data-type]: https://github.com/stdlib-js/array-base-assert-is-unsigned-integer-data-type
 
 <!-- </toc-links> -->
 
