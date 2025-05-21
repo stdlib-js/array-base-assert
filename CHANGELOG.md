@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-20)
+## Unreleased (2025-05-21)
 
 <section class="features">
 
@@ -37,6 +37,35 @@
 
 ### BREAKING CHANGES
 
+-   [`b0f11b1`](https://github.com/stdlib-js/stdlib/commit/b0f11b1a4ba47bed9c52c7825e27023223d4d9f4): remove `array/base/assert/any-is-entry-in`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array-base/any-is-entry-in` which provides the same API and
+        implementation.
+
+-   [`05f79b6`](https://github.com/stdlib-js/stdlib/commit/05f79b6d47b81a2193101ee6476877c4ae860cce): remove `array/base/assert/any-is-entry`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array-base/any-is-entry` which provides the same API and
+        implementation.
+
+-   [`87f46a0`](https://github.com/stdlib-js/stdlib/commit/87f46a023aab832c4adb03b772ffa8d3fd114406): remove `array/base/assert/any-has-property`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array-base/any-has-property` which provides the same API and
+        implementation.
+
+-   [`44e6405`](https://github.com/stdlib-js/stdlib/commit/44e64052156d8f89c2701616e0e2bf267746329b): remove `array/base/assert/any-has-own-property`
+
+    -   To migrate, users should update their require/import paths to use
+        `@stdlib/array-base/any-has-own-property` which provides the same API and
+        implementation.
+
+-   [`23e8953`](https://github.com/stdlib-js/stdlib/commit/23e89539dc1a96e17f06ab1bde7a11e76fddd83b): remove `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, `anyIsEntryIn`
+
+    -   To migrate, users should access the same symbols via the
+        `@stdlib/array-base` namespace.
+
 -   [`8b1548f`](https://github.com/stdlib-js/stdlib/commit/8b1548fb45c1ff131f5edac20cb984344a2d28ec): update namespace declarations
 
     -   To migrate, users should consult the corresponding packages containing the respective implementations to determine what is breaking. The primary breakages come from the `blas/*` namespace, where we recently refactored how top-level BLAS APIs operate on input arguments.
@@ -63,6 +92,11 @@ This release closes the following issue:
 
 <details>
 
+-   [`b0f11b1`](https://github.com/stdlib-js/stdlib/commit/b0f11b1a4ba47bed9c52c7825e27023223d4d9f4) - **remove:** remove `array/base/assert/any-is-entry-in` _(by Athan Reines)_
+-   [`05f79b6`](https://github.com/stdlib-js/stdlib/commit/05f79b6d47b81a2193101ee6476877c4ae860cce) - **remove:** remove `array/base/assert/any-is-entry` _(by Athan Reines)_
+-   [`87f46a0`](https://github.com/stdlib-js/stdlib/commit/87f46a023aab832c4adb03b772ffa8d3fd114406) - **remove:** remove `array/base/assert/any-has-property` _(by Athan Reines)_
+-   [`44e6405`](https://github.com/stdlib-js/stdlib/commit/44e64052156d8f89c2701616e0e2bf267746329b) - **remove:** remove `array/base/assert/any-has-own-property` _(by Athan Reines)_
+-   [`23e8953`](https://github.com/stdlib-js/stdlib/commit/23e89539dc1a96e17f06ab1bde7a11e76fddd83b) - **remove:** remove `anyHasOwnProp`, `anyHasProp`, `anyIsEntry`, `anyIsEntryIn` from namespace _(by Athan Reines)_
 -   [`89d9dc3`](https://github.com/stdlib-js/stdlib/commit/89d9dc316985aa3c194222afbf8146e58ff6d761) - **docs:** update namespace table of contents [(#7046)](https://github.com/stdlib-js/stdlib/pull/7046) _(by stdlib-bot)_
 -   [`99f515d`](https://github.com/stdlib-js/stdlib/commit/99f515d651fe793e13b1df6ff95f39200fad0ff1) - **docs:** update parameter types _(by Athan Reines)_
 -   [`02109aa`](https://github.com/stdlib-js/stdlib/commit/02109aa28a0c48a2d6b92de3423614204a39431e) - **chore:** address commit comments for commit `fbffea0` [(#7038)](https://github.com/stdlib-js/stdlib/pull/7038) _(by Sachin Raj, Philipp Burckhardt)_
