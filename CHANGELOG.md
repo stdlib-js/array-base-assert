@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-22)
+## Unreleased (2025-07-15)
 
 <section class="features">
 
 ### Features
 
+-   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - add `hasAlmostEqualValues` to namespace
+-   [`fee6898`](https://github.com/stdlib-js/stdlib/commit/fee68983980c006c27c7f1f5d1f3f11b20602974) - add `array/base/assert/has-almost-equal-values`
 -   [`0f6d4e7`](https://github.com/stdlib-js/stdlib/commit/0f6d4e7694d458f76dc077d5b618e405f6cfed37) - add `anyIsEntry` to namespace
 -   [`fbffea0`](https://github.com/stdlib-js/stdlib/commit/fbffea0a7be15b6013111fd0b613548d7c09a1b7) - add `array/base/assert/any-is-entry`
 -   [`dc8942d`](https://github.com/stdlib-js/stdlib/commit/dc8942da05af3ed631f67fc679c7c1730954e1be) - add `anyIsEntryIn` to namespace
@@ -92,6 +94,8 @@ This release closes the following issue:
 
 <details>
 
+-   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - **feat:** add `hasAlmostEqualValues` to namespace _(by Athan Reines)_
+-   [`fee6898`](https://github.com/stdlib-js/stdlib/commit/fee68983980c006c27c7f1f5d1f3f11b20602974) - **feat:** add `array/base/assert/has-almost-equal-values` _(by Athan Reines)_
 -   [`d3e9442`](https://github.com/stdlib-js/stdlib/commit/d3e9442155e8d093988fed8988489fbe7b549dbf) - **docs:** update namespace table of contents [(#7062)](https://github.com/stdlib-js/stdlib/pull/7062) _(by stdlib-bot)_
 -   [`b0f11b1`](https://github.com/stdlib-js/stdlib/commit/b0f11b1a4ba47bed9c52c7825e27023223d4d9f4) - **remove:** remove `array/base/assert/any-is-entry-in` _(by Athan Reines)_
 -   [`05f79b6`](https://github.com/stdlib-js/stdlib/commit/05f79b6d47b81a2193101ee6476877c4ae860cce) - **remove:** remove `array/base/assert/any-is-entry` _(by Athan Reines)_
