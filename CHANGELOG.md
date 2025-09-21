@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-11)
+## Unreleased (2025-09-21)
 
 <section class="features">
 
 ### Features
 
+-   [`a17f721`](https://github.com/stdlib-js/stdlib/commit/a17f721a3d8edb0702ff7e0f123bc93c1da17914) - update `array/base/assert` TypeScript declarations
 -   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - add `hasAlmostEqualValues` to namespace
 -   [`fee6898`](https://github.com/stdlib-js/stdlib/commit/fee68983980c006c27c7f1f5d1f3f11b20602974) - add `array/base/assert/has-almost-equal-values`
 -   [`0f6d4e7`](https://github.com/stdlib-js/stdlib/commit/0f6d4e7694d458f76dc077d5b618e405f6cfed37) - add `anyIsEntry` to namespace
@@ -94,6 +95,9 @@ This release closes the following issue:
 
 <details>
 
+-   [`a17f721`](https://github.com/stdlib-js/stdlib/commit/a17f721a3d8edb0702ff7e0f123bc93c1da17914) - **feat:** update `array/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
+-   [`4f3789b`](https://github.com/stdlib-js/stdlib/commit/4f3789b25e01908dab6c31b910573b73e5709ac5) - **docs:** fix example code _(by Philipp Burckhardt)_
+-   [`a147b7d`](https://github.com/stdlib-js/stdlib/commit/a147b7d6ef754925120fcc7bdec2b40842a3615a) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 -   [`5388bba`](https://github.com/stdlib-js/stdlib/commit/5388bba36044d2de93dacb0134c6e5539b02928c) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - **feat:** add `hasAlmostEqualValues` to namespace _(by Athan Reines)_
 -   [`fee6898`](https://github.com/stdlib-js/stdlib/commit/fee68983980c006c27c7f1f5d1f3f11b20602974) - **feat:** add `array/base/assert/has-almost-equal-values` _(by Athan Reines)_
