@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-21)
+## Unreleased (2025-11-07)
 
 <section class="features">
 
@@ -95,6 +95,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`a17f721`](https://github.com/stdlib-js/stdlib/commit/a17f721a3d8edb0702ff7e0f123bc93c1da17914) - **feat:** update `array/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`4f3789b`](https://github.com/stdlib-js/stdlib/commit/4f3789b25e01908dab6c31b910573b73e5709ac5) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`a147b7d`](https://github.com/stdlib-js/stdlib/commit/a147b7d6ef754925120fcc7bdec2b40842a3615a) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
