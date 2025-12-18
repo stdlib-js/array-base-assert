@@ -4,12 +4,14 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-11-07)
+## Unreleased (2025-12-18)
 
 <section class="features">
 
 ### Features
 
+-   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - add `hasAlmostSameValues` to namespace
+-   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - add `array/base/assert/has-almost-same-values`
 -   [`a17f721`](https://github.com/stdlib-js/stdlib/commit/a17f721a3d8edb0702ff7e0f123bc93c1da17914) - update `array/base/assert` TypeScript declarations
 -   [`0b89b56`](https://github.com/stdlib-js/stdlib/commit/0b89b56db0aa040a643ef859ac71795462e947d5) - add `hasAlmostEqualValues` to namespace
 -   [`fee6898`](https://github.com/stdlib-js/stdlib/commit/fee68983980c006c27c7f1f5d1f3f11b20602974) - add `array/base/assert/has-almost-equal-values`
@@ -95,6 +97,16 @@ This release closes the following issue:
 
 <details>
 
+-   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - **feat:** add `hasAlmostSameValues` to namespace _(by Athan Reines)_
+-   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - **feat:** add `array/base/assert/has-almost-same-values` _(by Athan Reines)_
+-   [`dd20818`](https://github.com/stdlib-js/stdlib/commit/dd20818a40cdd215a614a7cb1ec580c95f8fde80) - **bench:** refactor to use string interpolation in `array/base/assert/contains` [(#8844)](https://github.com/stdlib-js/stdlib/pull/8844) _(by ashutoshsao)_
+-   [`257b05e`](https://github.com/stdlib-js/stdlib/commit/257b05e78857f4b4ff76b3764565eadd8ce75946) - **bench:** refactor to use string interpolation in `array/base/assert/has-same-values` [(#8847)](https://github.com/stdlib-js/stdlib/pull/8847) _(by ashutoshsao)_
+-   [`cb96e8f`](https://github.com/stdlib-js/stdlib/commit/cb96e8f86be54682f17fc6a4f47338aea2ad30a9) - **bench:** refactor to use string interpolation in `array/base/assert/has-equal-values-indexed` [(#8846)](https://github.com/stdlib-js/stdlib/pull/8846) _(by ashutoshsao)_
+-   [`4c6da75`](https://github.com/stdlib-js/stdlib/commit/4c6da75d5efe773301912258d2b10f7e7121f4e0) - **bench:** refactor to use string interpolation in `array/base/assert/is-complex64array` [(#8784)](https://github.com/stdlib-js/stdlib/pull/8784) _(by Rohit R Bhat)_
+-   [`e7258ae`](https://github.com/stdlib-js/stdlib/commit/e7258ae18bab179392875a2aa810646f33da80e6) - **bench:** refactor to use string interpolation in `array/base/assert/is-complex128array` [(#8782)](https://github.com/stdlib-js/stdlib/pull/8782) _(by Rohit R Bhat)_
+-   [`9b50472`](https://github.com/stdlib-js/stdlib/commit/9b504729537c53298de78068c1b02dbb64170c88) - **bench:** refactor to use string interpolation in `array/base/assert/is-sorted-ascending` [(#8749)](https://github.com/stdlib-js/stdlib/pull/8749) _(by Rohit R Bhat)_
+-   [`68083d6`](https://github.com/stdlib-js/stdlib/commit/68083d60de8199eb42bf63fbae39838e3b23bdd7) - **bench:** refactor to use string interpolation in `array/base/assert/has-equal-values` [(#8691)](https://github.com/stdlib-js/stdlib/pull/8691) _(by Rohit R Bhat)_
+-   [`ac0438f`](https://github.com/stdlib-js/stdlib/commit/ac0438f675d717acdd81ffe3965e681999f352b9) - **bench:** refactor to use string interpolation in `array/base/assert/has-almost-equal-values` [(#8690)](https://github.com/stdlib-js/stdlib/pull/8690) _(by Rohit R Bhat)_
 -   [`5f5bb2d`](https://github.com/stdlib-js/stdlib/commit/5f5bb2d4277a24000b57fb07bc28d821500cd7e8) - **docs:** update namespace table of contents [(#8425)](https://github.com/stdlib-js/stdlib/pull/8425) _(by stdlib-bot, Athan Reines)_
 -   [`a17f721`](https://github.com/stdlib-js/stdlib/commit/a17f721a3d8edb0702ff7e0f123bc93c1da17914) - **feat:** update `array/base/assert` TypeScript declarations _(by Philipp Burckhardt)_
 -   [`4f3789b`](https://github.com/stdlib-js/stdlib/commit/4f3789b25e01908dab6c31b910573b73e5709ac5) - **docs:** fix example code _(by Philipp Burckhardt)_
@@ -151,12 +163,14 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 6 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Philipp Burckhardt
+-   Rohit R Bhat
 -   Sachin Raj
 -   Soumajit Chatterjee
+-   ashutoshsao
 
 </section>
 
