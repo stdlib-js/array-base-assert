@@ -97,6 +97,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`de9dec4`](https://github.com/stdlib-js/stdlib/commit/de9dec49411a9f71d800970e9324e87dca52098b) - **docs:** update namespace table of contents [(#9205)](https://github.com/stdlib-js/stdlib/pull/9205) _(by stdlib-bot)_
 -   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - **feat:** add `hasAlmostSameValues` to namespace _(by Athan Reines)_
 -   [`24426d2`](https://github.com/stdlib-js/stdlib/commit/24426d292e18009d0d4acd3615e8f520b92b0c1b) - **feat:** add `array/base/assert/has-almost-same-values` _(by Athan Reines)_
 -   [`dd20818`](https://github.com/stdlib-js/stdlib/commit/dd20818a40cdd215a614a7cb1ec580c95f8fde80) - **bench:** refactor to use string interpolation in `array/base/assert/contains` [(#8844)](https://github.com/stdlib-js/stdlib/pull/8844) _(by ashutoshsao)_

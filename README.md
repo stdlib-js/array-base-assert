@@ -80,6 +80,7 @@ The namespace exports the following:
 
 -   <span class="signature">[`contains( x, value )`][@stdlib/array/base/assert/contains]</span><span class="delimiter">: </span><span class="description">test if an array contains a provided search value.</span>
 -   <span class="signature">[`hasAlmostEqualValues( x, y, maxULP )`][@stdlib/array/base/assert/has-almost-equal-values]</span><span class="delimiter">: </span><span class="description">test if two arrays have respective elements which are approximately equal within a specified number of ULPs (units in the last place).</span>
+-   <span class="signature">[`hasAlmostSameValues( x, y, maxULP )`][@stdlib/array/base/assert/has-almost-same-values]</span><span class="delimiter">: </span><span class="description">test if two arrays have respective elements which are approximately the same value within a specified number of ULPs (units in the last place).</span>
 -   <span class="signature">[`hasEqualValuesIndexed( x, y )`][@stdlib/array/base/assert/has-equal-values-indexed]</span><span class="delimiter">: </span><span class="description">test if two indexed arrays have equal values.</span>
 -   <span class="signature">[`hasEqualValues( x, y )`][@stdlib/array/base/assert/has-equal-values]</span><span class="delimiter">: </span><span class="description">test if two arrays have equal values.</span>
 -   <span class="signature">[`hasSameValues( x, y )`][@stdlib/array/base/assert/has-same-values]</span><span class="delimiter">: </span><span class="description">test if two arrays have the same values.</span>
@@ -280,6 +281,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [@stdlib/array/base/assert/contains]: https://github.com/stdlib-js/array-base-assert-contains
 
 [@stdlib/array/base/assert/has-almost-equal-values]: https://github.com/stdlib-js/array-base-assert-has-almost-equal-values
+
+[@stdlib/array/base/assert/has-almost-same-values]: https://github.com/stdlib-js/array-base-assert-has-almost-same-values
 
 [@stdlib/array/base/assert/has-equal-values-indexed]: https://github.com/stdlib-js/array-base-assert-has-equal-values-indexed
 
