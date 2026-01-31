@@ -2,9 +2,9 @@
 
 > Package changelog.
 
-<section class="release" id="unreleased">
+<section class="release" id="v0.4.0">
 
-## Unreleased (2025-12-29)
+## 0.4.0 (2026-01-31)
 
 <section class="features">
 
@@ -98,6 +98,9 @@ This release closes the following issue:
 
 <details>
 
+-   [`7fbc3d9`](https://github.com/stdlib-js/stdlib/commit/7fbc3d91696d37d3f3f37377d14bd8e5e4d22358) - **bench:** use string interpolation in benchmark descriptions [(#9601)](https://github.com/stdlib-js/stdlib/pull/9601) _(by KovidhRaj)_
+-   [`ff76be4`](https://github.com/stdlib-js/stdlib/commit/ff76be4bd7eb9ced1fc74441b9766d1e5e6d6d31) - **bench:** use string interpolation for benchmark names [(#9517)](https://github.com/stdlib-js/stdlib/pull/9517) _(by KovidhRaj)_
+-   [`0ac2495`](https://github.com/stdlib-js/stdlib/commit/0ac2495ffcce896b3dfc737aca766b70f0ad9cb6) - **bench:** refactor to use string interpolation in `array/base/assert/is-accessor-array` [(#9458)](https://github.com/stdlib-js/stdlib/pull/9458) _(by KovidhRaj, Athan Reines, stdlib-bot)_
 -   [`6338030`](https://github.com/stdlib-js/stdlib/commit/63380300fa123617bf4d460483ab1e70d2611da3) - **feat:** update `array/base/assert` TypeScript declarations [(#9196)](https://github.com/stdlib-js/stdlib/pull/9196) _(by stdlib-bot)_
 -   [`de9dec4`](https://github.com/stdlib-js/stdlib/commit/de9dec49411a9f71d800970e9324e87dca52098b) - **docs:** update namespace table of contents [(#9205)](https://github.com/stdlib-js/stdlib/pull/9205) _(by stdlib-bot)_
 -   [`ca51243`](https://github.com/stdlib-js/stdlib/commit/ca5124377589a8051527e4bc3b87173723c88f51) - **feat:** add `hasAlmostSameValues` to namespace _(by Athan Reines)_
@@ -166,9 +169,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 6 people contributed to this release. Thank you to the following contributors:
+A total of 7 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   KovidhRaj
 -   Philipp Burckhardt
 -   Rohit R Bhat
 -   Sachin Raj
