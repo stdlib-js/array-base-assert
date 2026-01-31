@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.4.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { contains, hasAlmostEqualValues, hasAlmostSameValues, hasEqualValues, hasEqualValuesIndexed, hasSameValues, isAccessorArray, isBooleanArray, isBooleanDataType, isByteOrder, isComplex128Array, isComplex64Array, isComplexFloatingPointDataType, isComplexTypedArray, isDataType, isFloatingPointDataType, isIntegerDataType, isMostlySafeDataTypeCast, isNumericDataType, isRealDataType, isRealFloatingPointDataType, isSafeDataTypeCast, isSameKindDataTypeCast, isSignedIntegerDataType, isSortedAscending, isUnsignedIntegerDataType } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@esm/index.mjs';
+import { contains, hasAlmostEqualValues, hasAlmostSameValues, hasEqualValues, hasEqualValuesIndexed, hasSameValues, isAccessorArray, isBooleanArray, isBooleanDataType, isByteOrder, isComplex128Array, isComplex64Array, isComplexFloatingPointDataType, isComplexTypedArray, isDataType, isFloatingPointDataType, isIntegerDataType, isMostlySafeDataTypeCast, isNumericDataType, isRealDataType, isRealFloatingPointDataType, isSafeDataTypeCast, isSameKindDataTypeCast, isSignedIntegerDataType, isSortedAscending, isUnsignedIntegerDataType } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.4.0-esm/index.mjs';
 ```
 
 #### ns
@@ -115,7 +115,7 @@ The namespace exports the following:
 <body>
 <script type="module">
 
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@esm/index.mjs';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.4.0-esm/index.mjs';
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@esm/index.mjs';
