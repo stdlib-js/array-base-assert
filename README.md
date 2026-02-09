@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.4.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { contains, hasAlmostEqualValues, hasAlmostSameValues, hasEqualValues, hasEqualValuesIndexed, hasSameValues, isAccessorArray, isBooleanArray, isBooleanDataType, isByteOrder, isComplex128Array, isComplex64Array, isComplexFloatingPointDataType, isComplexTypedArray, isDataType, isFloatingPointDataType, isIntegerDataType, isMostlySafeDataTypeCast, isNumericDataType, isRealDataType, isRealFloatingPointDataType, isSafeDataTypeCast, isSameKindDataTypeCast, isSignedIntegerDataType, isSortedAscending, isUnsignedIntegerDataType } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
+import { contains, hasAlmostEqualValues, hasAlmostSameValues, hasEqualValues, hasEqualValuesIndexed, hasSameValues, isAccessorArray, isBooleanArray, isBooleanDataType, isByteOrder, isComplex128Array, isComplex64Array, isComplexFloatingPointDataType, isComplexTypedArray, isDataType, isFloatingPointDataType, isIntegerDataType, isMostlySafeDataTypeCast, isNumericDataType, isRealDataType, isRealFloatingPointDataType, isSafeDataTypeCast, isSameKindDataTypeCast, isSignedIntegerDataType, isSortedAscending, isUnsignedIntegerDataType } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.4.1-deno/mod.js';
 ```
 
 #### ns
@@ -110,7 +110,7 @@ The namespace exports the following:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@deno/mod.js';
+import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-assert@v0.4.1-deno/mod.js';
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-dtype@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import Int32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int32@deno/mod.js';
