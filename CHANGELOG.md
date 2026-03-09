@@ -2,6 +2,42 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-09)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`b721461`](https://github.com/stdlib-js/stdlib/commit/b721461895b04dd66f0915c76347244a7cc56148) - **docs:** revert style changes _(by Athan Reines)_
+-   [`3024bb3`](https://github.com/stdlib-js/stdlib/commit/3024bb37f70bf55295d9c4bf81107ff57c15ff8a) - **docs:** fix section comments and lint errors in `array` and `assert` READMEs _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.4.1">
 
 ## 0.4.1 (2026-02-08)
