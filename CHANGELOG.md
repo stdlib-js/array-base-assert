@@ -4,7 +4,21 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-03)
+## Unreleased (2026-07-04)
+
+<section class="features">
+
+### Features
+
+-   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243)
+-   [`49dd389`](https://github.com/stdlib-js/stdlib/commit/49dd389fcd29bf8dcf237b6694dbf4c35f65d5a6) - add float16 dtype support in `array/base/assert/is-data-type` [(#13244)](https://github.com/stdlib-js/stdlib/pull/13244)
+-   [`f765960`](https://github.com/stdlib-js/stdlib/commit/f765960c33022d964a5fde355f3a38caf7a17021) - add float16 support in `array/base/assert/is-accessor-array` [(#13242)](https://github.com/stdlib-js/stdlib/pull/13242)
+-   [`d78d6f3`](https://github.com/stdlib-js/stdlib/commit/d78d6f3c29cc0132542f6679599c93ddafabae19) - add float16 support in `array/base/assert/is-complex-floating-point-data-type` [(#13241)](https://github.com/stdlib-js/stdlib/pull/13241)
+-   [`e0dc901`](https://github.com/stdlib-js/stdlib/commit/e0dc901387fe527854525a12ac5049cbc002c5ed) - add float16 support in `array/base/assert/is-floating-point-data-type` [(#13245)](https://github.com/stdlib-js/stdlib/pull/13245)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +26,12 @@
 
 <details>
 
+-   [`e954cb2`](https://github.com/stdlib-js/stdlib/commit/e954cb27d752f444cc937a94278a68ac1e22c58d) - **docs:** update `array/base/assert` TS declarations example code [(#13254)](https://github.com/stdlib-js/stdlib/pull/13254) _(by stdlib-bot)_
+-   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - **feat:** add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243) _(by Gururaj Gurram)_
+-   [`49dd389`](https://github.com/stdlib-js/stdlib/commit/49dd389fcd29bf8dcf237b6694dbf4c35f65d5a6) - **feat:** add float16 dtype support in `array/base/assert/is-data-type` [(#13244)](https://github.com/stdlib-js/stdlib/pull/13244) _(by Gururaj Gurram, Athan Reines)_
+-   [`f765960`](https://github.com/stdlib-js/stdlib/commit/f765960c33022d964a5fde355f3a38caf7a17021) - **feat:** add float16 support in `array/base/assert/is-accessor-array` [(#13242)](https://github.com/stdlib-js/stdlib/pull/13242) _(by Gururaj Gurram)_
+-   [`d78d6f3`](https://github.com/stdlib-js/stdlib/commit/d78d6f3c29cc0132542f6679599c93ddafabae19) - **feat:** add float16 support in `array/base/assert/is-complex-floating-point-data-type` [(#13241)](https://github.com/stdlib-js/stdlib/pull/13241) _(by Gururaj Gurram)_
+-   [`e0dc901`](https://github.com/stdlib-js/stdlib/commit/e0dc901387fe527854525a12ac5049cbc002c5ed) - **feat:** add float16 support in `array/base/assert/is-floating-point-data-type` [(#13245)](https://github.com/stdlib-js/stdlib/pull/13245) _(by Gururaj Gurram)_
 -   [`00885d3`](https://github.com/stdlib-js/stdlib/commit/00885d3e6afd8118ce2b6e5f7a1c544d5b6d4ffb) - **bench:** refactor to use string interpolation in `array` [(#11411)](https://github.com/stdlib-js/stdlib/pull/11411) _(by Karan Anand, Athan Reines)_
 -   [`394c99f`](https://github.com/stdlib-js/stdlib/commit/394c99ff634519d6219987acc2fd7bcca0399b55) - **docs:** add missing stub sections [(#11871)](https://github.com/stdlib-js/stdlib/pull/11871) _(by Philipp Burckhardt)_
 -   [`56bc531`](https://github.com/stdlib-js/stdlib/commit/56bc5310298aec8f6eca5ca07ccff333c4792a40) - **bench:** refactor to use string interpolation in `@stdlib/array` [(#11412)](https:-/github.com/stdlib-js/stdlib/pull/11412) _(by Karan Anand, Athan Reines)_
@@ -28,9 +48,10 @@
 
 ### Contributors
 
-A total of 3 people contributed to this release. Thank you to the following contributors:
+A total of 4 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Gururaj Gurram
 -   Karan Anand
 -   Philipp Burckhardt
 
