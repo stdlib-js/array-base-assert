@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-04)
+## Unreleased (2026-08-21)
 
 <section class="features">
 
@@ -26,6 +26,7 @@
 
 <details>
 
+-   [`f1eeb72`](https://github.com/stdlib-js/stdlib/commit/f1eeb7279dd2bd1dbec48234ac146791a97a406d) - **chore:** update keywords [(#13334)](https://github.com/stdlib-js/stdlib/pull/13334) _(by Philipp Burckhardt)_
 -   [`e954cb2`](https://github.com/stdlib-js/stdlib/commit/e954cb27d752f444cc937a94278a68ac1e22c58d) - **docs:** update `array/base/assert` TS declarations example code [(#13254)](https://github.com/stdlib-js/stdlib/pull/13254) _(by stdlib-bot)_
 -   [`7fe03ab`](https://github.com/stdlib-js/stdlib/commit/7fe03ab3710db4701e1e77e8169ebf6f8dcb6236) - **feat:** add float16 support in `array/base/assert/is-complex-typed-array` [(#13243)](https://github.com/stdlib-js/stdlib/pull/13243) _(by Gururaj Gurram)_
 -   [`49dd389`](https://github.com/stdlib-js/stdlib/commit/49dd389fcd29bf8dcf237b6694dbf4c35f65d5a6) - **feat:** add float16 dtype support in `array/base/assert/is-data-type` [(#13244)](https://github.com/stdlib-js/stdlib/pull/13244) _(by Gururaj Gurram, Athan Reines)_
